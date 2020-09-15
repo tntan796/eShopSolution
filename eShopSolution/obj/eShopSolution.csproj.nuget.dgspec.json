@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Project Hoc Tap\\NetCore\\Net3.0 Tedu\\eShopSolution\\eShopSolution\\eShopSolution.csproj": {}
+    "E:\\Hoc Tap\\eShopSolution\\eShopSolution\\eShopSolution.csproj": {}
   },
   "projects": {
-    "D:\\Project Hoc Tap\\NetCore\\Net3.0 Tedu\\eShopSolution\\eShopSolution\\eShopSolution.csproj": {
+    "E:\\Hoc Tap\\eShopSolution\\eShopSolution\\eShopSolution.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Project Hoc Tap\\NetCore\\Net3.0 Tedu\\eShopSolution\\eShopSolution\\eShopSolution.csproj",
+        "projectUniqueName": "E:\\Hoc Tap\\eShopSolution\\eShopSolution\\eShopSolution.csproj",
         "projectName": "eShopSolution",
-        "projectPath": "D:\\Project Hoc Tap\\NetCore\\Net3.0 Tedu\\eShopSolution\\eShopSolution\\eShopSolution.csproj",
-        "packagesPath": "C:\\Users\\Tan Tano\\.nuget\\packages\\",
-        "outputPath": "D:\\Project Hoc Tap\\NetCore\\Net3.0 Tedu\\eShopSolution\\eShopSolution\\obj\\",
+        "projectPath": "E:\\Hoc Tap\\eShopSolution\\eShopSolution\\eShopSolution.csproj",
+        "packagesPath": "C:\\Users\\tantn\\.nuget\\packages\\",
+        "outputPath": "E:\\Hoc Tap\\eShopSolution\\eShopSolution\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Tan Tano\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\tantn\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -55,7 +58,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

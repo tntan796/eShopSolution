@@ -8,19 +8,23 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\Tan Tano\\.nuget\\packages\\": {}
+    "C:\\Users\\tantn\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Project Hoc Tap\\NetCore\\Net3.0 Tedu\\eShopSolution\\eShopSolution.Application\\eShopSolution.Application.csproj",
+      "projectUniqueName": "E:\\Hoc Tap\\eShopSolution\\eShopSolution.Application\\eShopSolution.Application.csproj",
       "projectName": "eShopSolution.Application",
-      "projectPath": "D:\\Project Hoc Tap\\NetCore\\Net3.0 Tedu\\eShopSolution\\eShopSolution.Application\\eShopSolution.Application.csproj",
-      "packagesPath": "C:\\Users\\Tan Tano\\.nuget\\packages\\",
-      "outputPath": "D:\\Project Hoc Tap\\NetCore\\Net3.0 Tedu\\eShopSolution\\eShopSolution.Application\\obj\\",
+      "projectPath": "E:\\Hoc Tap\\eShopSolution\\eShopSolution.Application\\eShopSolution.Application.csproj",
+      "packagesPath": "C:\\Users\\tantn\\.nuget\\packages\\",
+      "outputPath": "E:\\Hoc Tap\\eShopSolution\\eShopSolution.Application\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Tan Tano\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\tantn\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -58,7 +62,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
       }
     }
   }
