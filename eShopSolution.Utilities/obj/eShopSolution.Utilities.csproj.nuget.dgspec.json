@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Hoc Tap\\eShopSolution\\eShopSolution.Utilities\\eShopSolution.Utilities.csproj": {}
+    "D:\\Project Hoc Tap\\NetCore\\Net3.0 Tedu\\eShopSolution\\eShopSolution.Utilities\\eShopSolution.Utilities.csproj": {}
   },
   "projects": {
-    "E:\\Hoc Tap\\eShopSolution\\eShopSolution.Utilities\\eShopSolution.Utilities.csproj": {
+    "D:\\Project Hoc Tap\\NetCore\\Net3.0 Tedu\\eShopSolution\\eShopSolution.Utilities\\eShopSolution.Utilities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Hoc Tap\\eShopSolution\\eShopSolution.Utilities\\eShopSolution.Utilities.csproj",
+        "projectUniqueName": "D:\\Project Hoc Tap\\NetCore\\Net3.0 Tedu\\eShopSolution\\eShopSolution.Utilities\\eShopSolution.Utilities.csproj",
         "projectName": "eShopSolution.Utilities",
-        "projectPath": "E:\\Hoc Tap\\eShopSolution\\eShopSolution.Utilities\\eShopSolution.Utilities.csproj",
-        "packagesPath": "C:\\Users\\tantn\\.nuget\\packages\\",
-        "outputPath": "E:\\Hoc Tap\\eShopSolution\\eShopSolution.Utilities\\obj\\",
+        "projectPath": "D:\\Project Hoc Tap\\NetCore\\Net3.0 Tedu\\eShopSolution\\eShopSolution.Utilities\\eShopSolution.Utilities.csproj",
+        "packagesPath": "C:\\Users\\o0oCh\\.nuget\\packages\\",
+        "outputPath": "D:\\Project Hoc Tap\\NetCore\\Net3.0 Tedu\\eShopSolution\\eShopSolution.Utilities\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\tantn\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\o0oCh\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -55,7 +52,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
         }
       }
     }

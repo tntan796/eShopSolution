@@ -1,9 +1,9 @@
 ﻿using eShopSolution.Data.Entities;
 using eShopSolution.Data.Enums;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.EntityFrameworkCore;
 using System;
-using System.Collections.Generic;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
+using Microsoft.AspNetCore.Identity;
 
 namespace eShopSolution.Data.Extensions
 {
@@ -12,9 +12,9 @@ namespace eShopSolution.Data.Extensions
         public static void Seed(this ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<AppConfig>().HasData(
-                new AppConfig() { Key = "HomeTitle", Value = "This is home page of eShopSolution"},
-                new AppConfig() { Key = "HomeKeyword", Value = "This is keyword of eShopSolution"},
-                new AppConfig() { Key = "HomeDescription", Value = "This is description of eShopSolution"}
+                new AppConfig() { Key = "HomeTitle", Value = "This is home page of eShopSolution" },
+                new AppConfig() { Key = "HomeKeyword", Value = "This is keyword of eShopSolution" },
+                new AppConfig() { Key = "HomeDescription", Value = "This is description of eShopSolution" }
                 );
 
             modelBuilder.Entity<Language>().HasData(
@@ -43,15 +43,18 @@ namespace eShopSolution.Data.Extensions
                 );
 
             modelBuilder.Entity<CategoryTranslation>().HasData(
-                new CategoryTranslation() {
+                new CategoryTranslation()
+                {
                     Id = 1,
                     CategoryId = 1,
                     Name = "Áo Nam",
                     LanguageId = "vi-VN",
                     SeoAlias = "ao-nam",
                     SeoDescription = "Sản phẩm áo thời trang nam",
-                    SeoTitle = "Sản phẩm áo thời trang nam" },
-                new CategoryTranslation() {
+                    SeoTitle = "Sản phẩm áo thời trang nam"
+                },
+                new CategoryTranslation()
+                {
                     Id = 2,
                     CategoryId = 1,
                     Name = "Men Shirt",
@@ -60,7 +63,8 @@ namespace eShopSolution.Data.Extensions
                     SeoDescription = "The shirt products for men",
                     SeoTitle = "The shirt products for men"
                 },
-                new CategoryTranslation() {
+                new CategoryTranslation()
+                {
                     Id = 3,
                     CategoryId = 2,
                     Name = "Áo nữ",
@@ -69,7 +73,8 @@ namespace eShopSolution.Data.Extensions
                     SeoDescription = "Sản phẩm áo thời trang nữ",
                     SeoTitle = "Sản phẩm áo thời trang nữ"
                 },
-                new CategoryTranslation() {
+                new CategoryTranslation()
+                {
                     Id = 4,
                     CategoryId = 2,
                     Name = "Women Shirt",
@@ -121,7 +126,7 @@ namespace eShopSolution.Data.Extensions
                 );
 
             modelBuilder.Entity<ProductInCategory>().HasData(
-               new ProductInCategory() { ProductId = 1, CategoryId = 1}
+               new ProductInCategory() { ProductId = 1, CategoryId = 1 }
                 );
 
 
@@ -129,7 +134,7 @@ namespace eShopSolution.Data.Extensions
             var roleId = new Guid("AAAABA55-808E-479F-BE8B-72F69913442F");
             var adminId = new Guid("DDD4BA55-808E-479F-BE8B-72F69913442F");
             modelBuilder.Entity<AppRole>().HasData(
-                new AppRole { Id = roleId, Name = "admin", NormalizedName = "admin", Description = "Description Role"});
+                new AppRole { Id = roleId, Name = "admin", NormalizedName = "admin", Description = "Description Role" });
             var hasher = new PasswordHasher<AppUser>();
             modelBuilder.Entity<AppUser>().HasData(
                 new AppUser

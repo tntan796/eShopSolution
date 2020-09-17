@@ -1,7 +1,6 @@
 ﻿using eShopSolution.Data.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-
 namespace eShopSolution.Data.Configurations
 {
     public class AppRoleConfiguration : IEntityTypeConfiguration<AppRole>

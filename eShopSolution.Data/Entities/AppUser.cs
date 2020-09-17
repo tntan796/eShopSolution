@@ -1,10 +1,9 @@
-﻿using Microsoft.AspNetCore.Identity;
-using System;
+﻿using System;
 using System.Collections.Generic;
-
+using Microsoft.AspNetCore.Identity;
 namespace eShopSolution.Data.Entities
 {
-    public class AppUser: IdentityUser<Guid>
+    public class AppUser : IdentityUser<Guid>
     {
         public string FirstName { set; get; }
         public string LastName { get; set; }
