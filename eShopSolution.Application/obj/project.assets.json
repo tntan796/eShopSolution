@@ -1904,6 +1904,16 @@
         "runtime": {
           "bin/placeholder/eShopSolution.Data.dll": {}
         }
+      },
+      "eShopSolution.Utilities/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/eShopSolution.Utilities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/eShopSolution.Utilities.dll": {}
+        }
       }
     }
   },
@@ -6585,11 +6595,17 @@
       "type": "project",
       "path": "../eShopSolution.Data/eShopSolution.Data.csproj",
       "msbuildProject": "../eShopSolution.Data/eShopSolution.Data.csproj"
+    },
+    "eShopSolution.Utilities/1.0.0": {
+      "type": "project",
+      "path": "../eShopSolution.Utilities/eShopSolution.Utilities.csproj",
+      "msbuildProject": "../eShopSolution.Utilities/eShopSolution.Utilities.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "eShopSolution.Data >= 1.0.0"
+      "eShopSolution.Data >= 1.0.0",
+      "eShopSolution.Utilities >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -6624,6 +6640,9 @@
           "projectReferences": {
             "E:\\Hoc Tap\\eShopSolution\\eShopSolution.Data\\eShopSolution.Data.csproj": {
               "projectPath": "E:\\Hoc Tap\\eShopSolution\\eShopSolution.Data\\eShopSolution.Data.csproj"
+            },
+            "E:\\Hoc Tap\\eShopSolution\\eShopSolution.Utilities\\eShopSolution.Utilities.csproj": {
+              "projectPath": "E:\\Hoc Tap\\eShopSolution\\eShopSolution.Utilities\\eShopSolution.Utilities.csproj"
             }
           }
         }
