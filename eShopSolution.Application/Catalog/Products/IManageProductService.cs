@@ -1,6 +1,6 @@
-﻿using eShopSolution.Application.Catalog.Products.Dtos;
-using eShopSolution.Application.Catalog.Products.Dtos.Manager;
-using eShopSolution.Application.Dtos;
+﻿using eShopSolution.ViewModel.Catalog.Products;
+using eShopSolution.ViewModel.Catalog.Products.Manager;
+using eShopSolution.ViewModel.Common;
 using System.Threading.Tasks;
 
 namespace eShopSolution.Application.Catalog.Products
