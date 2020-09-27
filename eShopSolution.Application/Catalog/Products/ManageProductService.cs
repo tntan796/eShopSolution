@@ -202,14 +202,29 @@ namespace eShopSolution.Application.Catalog.Products
             throw new NotImplementedException();
         }
 
-        public Task<int> RemoveImages(int imageId)
+        public async Task<int> RemoveImages(int imageId)
         {
-            throw new NotImplementedException();
+            var productImage = await _context.productImages.FindAsync(imageId);
+            if (productImage == null)
+                throw new EShopExceptions($"Cannot find an image with id {imageId}");
+            _context.productImages.Remove(productImage);
+            return await _context.SaveChangesAsync();
         }
 
-        public Task<List<ViewModel.Catalog.Products.Public.ProductImageViewModel>> GetListImage(int productId)
+        public async Task<List<ProductImageViewModel>> GetListImage(int productId)
         {
-            throw new NotImplementedException();
+            return await _context.productImages.Where(x => x.ProductId == productId)
+                .Select(i => new ProductImageViewModel()
+                {
+                    Caption = i.Caption,
+                    DateCreated = i.DateCreated,
+                    FileSize = i.FileSize,
+                    Id = i.Id,
+                    ImagePath = i.ImagePath,
+                    IsDefault = i.IsDefault,
+                    ProductId = i.ProductId,
+                    SortOrder = i.SortOrder
+                }).ToListAsync();
         }
     }
 }
