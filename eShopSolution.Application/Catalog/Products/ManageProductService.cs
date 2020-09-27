@@ -6,17 +6,17 @@ using eShopSolution.ViewModel.Catalog.Products;
 using eShopSolution.ViewModel.Catalog.Products.Manager;
 using eShopSolution.ViewModel.Common;
 using Microsoft.AspNetCore.Http;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.Net.Http.Headers;
 using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
+using System.Net.Http.Headers;
 using System.Threading.Tasks;
+using System.Linq;
+using Microsoft.EntityFrameworkCore;
 
 namespace eShopSolution.Application.Catalog.Products
 {
-    public class ManageProductService : IManageProductService
+    public class ManageProductService: IManageProductService
     {
         private readonly EShopDbContext _context;
         private readonly FileStorageService _storageService;
@@ -103,7 +103,7 @@ namespace eShopSolution.Application.Catalog.Products
                             on p.Id equals pic.ProductId
                         join c in _context.Categories
                             on pic.CategoryId equals c.Id
-                        select new { p, pt, pic};
+                        select new { p, pt, pic };
             // 2. Filter
             if (!string.IsNullOrEmpty(request.Keyword))
             {
@@ -125,10 +125,10 @@ namespace eShopSolution.Application.Catalog.Products
                     Description = t.pt.Description,
                     Details = t.pt.Details,
                     LanguageId = t.pt.LanguageId,
-                    OriginalPrice = t. p.OriginalPrice,
+                    OriginalPrice = t.p.OriginalPrice,
                     Price = t.p.Price,
                     SeoAlias = t.pt.SeoAlias,
-                    SeoDescription  = t.pt.SeoDescription,
+                    SeoDescription = t.pt.SeoDescription,
                     SeoTitle = t.pt.SeoTitle,
                     Stock = t.p.Stock,
                     ViewCount = t.p.ViewCount

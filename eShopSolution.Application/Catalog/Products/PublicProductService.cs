@@ -1,14 +1,15 @@
 ﻿using eShopSolution.Data.EF;
+using eShopSolution.ViewModel.Catalog.Products;
+using eShopSolution.ViewModel.Common;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 using System.Linq;
 using Microsoft.EntityFrameworkCore;
-using eShopSolution.ViewModel.Common;
 using eShopSolution.ViewModel.Catalog.Products.Public;
-using eShopSolution.ViewModel.Catalog.Products;
 
 namespace eShopSolution.Application.Catalog.Products
 {
-    public class PublicProductService : IPublicProductService
+    public class PublicProductService: IPublicProductService
     {
         private readonly EShopDbContext _context;
         public PublicProductService(EShopDbContext context)
@@ -28,7 +29,7 @@ namespace eShopSolution.Application.Catalog.Products
                             on pic.CategoryId equals c.Id
                         select new { p, pt, pic };
             // 2. Filter
-            if (request.CategoryId.HasValue && request.CategoryId.Value > 0) 
+            if (request.CategoryId.HasValue && request.CategoryId.Value > 0)
             {
                 query = query.Where(t => t.pic.CategoryId == request.CategoryId);
             }
