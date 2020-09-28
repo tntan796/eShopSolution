@@ -32,6 +32,7 @@ namespace eShopSolution.BackendApi
 
             //Declare DI
             services.AddTransient<IPublicProductService, PublicProductService>();
+            services.AddSwaggerGen();
             services.AddControllersWithViews();
         }
 
@@ -50,16 +51,22 @@ namespace eShopSolution.BackendApi
             }
             app.UseHttpsRedirection();
             app.UseStaticFiles();
+            // Enable middleware to serve generated Swagger as a JSON endpoint.
+            app.UseSwagger();
 
+            // Enable middleware to serve swagger-ui (HTML, JS, CSS, etc.),
+            // specifying the Swagger JSON endpoint.
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
+            });
             app.UseRouting();
 
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapControllerRoute(
-                    name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
+                endpoints.MapControllers();
             });
         }
     }
