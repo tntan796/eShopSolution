@@ -6651,11 +6651,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Project Hoc Tap\\NetCore\\Net3.0 Tedu\\eShopSolution\\eShopSolution.Data\\eShopSolution.Data.csproj",
+      "projectUniqueName": "D:\\ProjectHocTap\\NetCore\\Net3Tedu\\eShopSolution\\eShopSolution.Data\\eShopSolution.Data.csproj",
       "projectName": "eShopSolution.Data",
-      "projectPath": "D:\\Project Hoc Tap\\NetCore\\Net3.0 Tedu\\eShopSolution\\eShopSolution.Data\\eShopSolution.Data.csproj",
+      "projectPath": "D:\\ProjectHocTap\\NetCore\\Net3Tedu\\eShopSolution\\eShopSolution.Data\\eShopSolution.Data.csproj",
       "packagesPath": "C:\\Users\\o0oCh\\.nuget\\packages\\",
-      "outputPath": "D:\\Project Hoc Tap\\NetCore\\Net3.0 Tedu\\eShopSolution\\eShopSolution.Data\\obj\\",
+      "outputPath": "D:\\ProjectHocTap\\NetCore\\Net3Tedu\\eShopSolution\\eShopSolution.Data\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\o0oCh\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -6888,11 +6888,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Project Hoc Tap\\NetCore\\Net3.0 Tedu\\eShopSolution\\eShopSolution.BackendApi\\eShopSolution.BackendApi.csproj",
+      "projectUniqueName": "D:\\ProjectHocTap\\NetCore\\Net3Tedu\\eShopSolution\\eShopSolution.BackendApi\\eShopSolution.BackendApi.csproj",
       "projectName": "eShopSolution.BackendApi",
-      "projectPath": "D:\\Project Hoc Tap\\NetCore\\Net3.0 Tedu\\eShopSolution\\eShopSolution.BackendApi\\eShopSolution.BackendApi.csproj",
+      "projectPath": "D:\\ProjectHocTap\\NetCore\\Net3Tedu\\eShopSolution\\eShopSolution.BackendApi\\eShopSolution.BackendApi.csproj",
       "packagesPath": "C:\\Users\\o0oCh\\.nuget\\packages\\",
-      "outputPath": "D:\\Project Hoc Tap\\NetCore\\Net3.0 Tedu\\eShopSolution\\eShopSolution.BackendApi\\obj\\",
+      "outputPath": "D:\\ProjectHocTap\\NetCore\\Net3Tedu\\eShopSolution\\eShopSolution.BackendApi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\o0oCh\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -6908,17 +6908,17 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "D:\\Project Hoc Tap\\NetCore\\Net3.0 Tedu\\eShopSolution\\eShopSolution.Application\\eShopSolution.Application.csproj": {
-              "projectPath": "D:\\Project Hoc Tap\\NetCore\\Net3.0 Tedu\\eShopSolution\\eShopSolution.Application\\eShopSolution.Application.csproj"
+            "D:\\ProjectHocTap\\NetCore\\Net3Tedu\\eShopSolution\\eShopSolution.Application\\eShopSolution.Application.csproj": {
+              "projectPath": "D:\\ProjectHocTap\\NetCore\\Net3Tedu\\eShopSolution\\eShopSolution.Application\\eShopSolution.Application.csproj"
             },
-            "D:\\Project Hoc Tap\\NetCore\\Net3.0 Tedu\\eShopSolution\\eShopSolution.Data\\eShopSolution.Data.csproj": {
-              "projectPath": "D:\\Project Hoc Tap\\NetCore\\Net3.0 Tedu\\eShopSolution\\eShopSolution.Data\\eShopSolution.Data.csproj"
+            "D:\\ProjectHocTap\\NetCore\\Net3Tedu\\eShopSolution\\eShopSolution.Data\\eShopSolution.Data.csproj": {
+              "projectPath": "D:\\ProjectHocTap\\NetCore\\Net3Tedu\\eShopSolution\\eShopSolution.Data\\eShopSolution.Data.csproj"
             },
-            "D:\\Project Hoc Tap\\NetCore\\Net3.0 Tedu\\eShopSolution\\eShopSolution.Utilities\\eShopSolution.Utilities.csproj": {
-              "projectPath": "D:\\Project Hoc Tap\\NetCore\\Net3.0 Tedu\\eShopSolution\\eShopSolution.Utilities\\eShopSolution.Utilities.csproj"
+            "D:\\ProjectHocTap\\NetCore\\Net3Tedu\\eShopSolution\\eShopSolution.Utilities\\eShopSolution.Utilities.csproj": {
+              "projectPath": "D:\\ProjectHocTap\\NetCore\\Net3Tedu\\eShopSolution\\eShopSolution.Utilities\\eShopSolution.Utilities.csproj"
             },
-            "D:\\Project Hoc Tap\\NetCore\\Net3.0 Tedu\\eShopSolution\\eShopSolution.ViewModel\\eShopSolution.ViewModel.csproj": {
-              "projectPath": "D:\\Project Hoc Tap\\NetCore\\Net3.0 Tedu\\eShopSolution\\eShopSolution.ViewModel\\eShopSolution.ViewModel.csproj"
+            "D:\\ProjectHocTap\\NetCore\\Net3Tedu\\eShopSolution\\eShopSolution.ViewModel\\eShopSolution.ViewModel.csproj": {
+              "projectPath": "D:\\ProjectHocTap\\NetCore\\Net3Tedu\\eShopSolution\\eShopSolution.ViewModel\\eShopSolution.ViewModel.csproj"
             }
           }
         }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Project Hoc Tap\\NetCore\\Net3.0 Tedu\\eShopSolution\\eShopSolution.ViewModel\\eShopSolution.ViewModel.csproj": {}
+    "D:\\ProjectHocTap\\NetCore\\Net3Tedu\\eShopSolution\\eShopSolution.ViewModel\\eShopSolution.ViewModel.csproj": {}
   },
   "projects": {
-    "D:\\Project Hoc Tap\\NetCore\\Net3.0 Tedu\\eShopSolution\\eShopSolution.ViewModel\\eShopSolution.ViewModel.csproj": {
+    "D:\\ProjectHocTap\\NetCore\\Net3Tedu\\eShopSolution\\eShopSolution.ViewModel\\eShopSolution.ViewModel.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Project Hoc Tap\\NetCore\\Net3.0 Tedu\\eShopSolution\\eShopSolution.ViewModel\\eShopSolution.ViewModel.csproj",
+        "projectUniqueName": "D:\\ProjectHocTap\\NetCore\\Net3Tedu\\eShopSolution\\eShopSolution.ViewModel\\eShopSolution.ViewModel.csproj",
         "projectName": "eShopSolution.ViewModel",
-        "projectPath": "D:\\Project Hoc Tap\\NetCore\\Net3.0 Tedu\\eShopSolution\\eShopSolution.ViewModel\\eShopSolution.ViewModel.csproj",
+        "projectPath": "D:\\ProjectHocTap\\NetCore\\Net3Tedu\\eShopSolution\\eShopSolution.ViewModel\\eShopSolution.ViewModel.csproj",
         "packagesPath": "C:\\Users\\o0oCh\\.nuget\\packages\\",
-        "outputPath": "D:\\Project Hoc Tap\\NetCore\\Net3.0 Tedu\\eShopSolution\\eShopSolution.ViewModel\\obj\\",
+        "outputPath": "D:\\ProjectHocTap\\NetCore\\Net3Tedu\\eShopSolution\\eShopSolution.ViewModel\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\o0oCh\\AppData\\Roaming\\NuGet\\NuGet.Config",
