@@ -6,11 +6,15 @@ namespace eShopSolution.Application.Common
     public class FileStorageService: IStorageService
     {
         private readonly string _userContentFolder;
-        private const string USER_CONTENT_FOLDER_NAME = "user-content";
+        private const string USER_CONTENT_FOLDER_NAME = "TNT";
 
         public FileStorageService(IWebHostEnvironment webHostEnviroment)
         {
             _userContentFolder = Path.Combine(webHostEnviroment.WebRootPath, USER_CONTENT_FOLDER_NAME);
+            if (!Directory.Exists(_userContentFolder))
+            {
+                System.IO.Directory.CreateDirectory(_userContentFolder);
+            }
         }
         public async Task DeleteAsync(string fileName)
         {

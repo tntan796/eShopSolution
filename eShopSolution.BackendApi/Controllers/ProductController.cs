@@ -40,9 +40,9 @@ namespace eShopSolution.BackendApi.Controllers
 
         // Https://localhost:port/api/product/1
         [HttpGet("{id}")]
-        public async Task<IActionResult> GetById(int productId)
+        public async Task<IActionResult> GetById(int productId, string languageId)
         {
-            var product = await _manageProductService.GetProductById(productId);
+            var product = await _manageProductService.GetProductById(productId, languageId);
             if (product == null)
             {
                 return BadRequest("Can not found product");
@@ -58,7 +58,7 @@ namespace eShopSolution.BackendApi.Controllers
             {
                 return BadRequest();
             }
-            var product = await _manageProductService.GetProductById(productId);
+            var product = await _manageProductService.GetProductById(productId, request.LanguageId);
             return CreatedAtAction(nameof(GetById), new { id = productId}, product);
         }
 
