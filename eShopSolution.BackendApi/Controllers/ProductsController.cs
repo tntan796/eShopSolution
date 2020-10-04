@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using eShopSolution.Application.Catalog.Products;
+using eShopSolution.ViewModel.Catalog.ProductImage;
 using eShopSolution.ViewModel.Catalog.Products;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -98,6 +99,49 @@ namespace eShopSolution.BackendApi.Controllers
         {
             var result = await _manageProductService.UpdatePrice(productId, newPrice);
             if (!result)
+            {
+                return BadRequest();
+            }
+            return Ok();
+        }
+
+        // Https://localhost:port/api/product/1
+        [HttpGet("{productId}/images/{imageId}", Name = "GetProductImageById")]
+        public async Task<IActionResult> GetProductImageById(int productId, int imageId)
+        {
+            var product = await _manageProductService.GetProductImageById(productId, imageId);
+            if (product == null)
+            {
+                return BadRequest("Can not found product");
+            }
+            return Ok(product);
+        }
+
+        [HttpPost("{productId}/images")]
+        public async Task<IActionResult> CreateImage(int productId, [FromForm] ProductImageCreateRequest request)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+            var imageId = await _manageProductService.AddImage(productId, request);
+            if (imageId == 0)
+            {
+                return BadRequest();
+            }
+            var image = await _manageProductService.GetProductImageById(productId, imageId);
+            return CreatedAtAction(nameof(GetProductImageById), new { productId = productId, imageId = imageId }, image);
+        }
+
+        [HttpPut("/images/{imageId}")]
+        public async Task<IActionResult> UpdateImage(int imageId, [FromForm] ProductImageUpdateRequest request)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+            var result = await _manageProductService.UpdateImage(imageId, request);
+            if (result == 0)
             {
                 return BadRequest();
             }
