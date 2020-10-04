@@ -13,7 +13,7 @@ namespace eShopSolution.Application.Common
             _userContentFolder = Path.Combine(webHostEnviroment.WebRootPath, USER_CONTENT_FOLDER_NAME);
             if (!Directory.Exists(_userContentFolder))
             {
-                System.IO.Directory.CreateDirectory(_userContentFolder);
+                Directory.CreateDirectory(_userContentFolder);
             }
         }
         public async Task DeleteAsync(string fileName)
